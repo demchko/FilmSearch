@@ -18,7 +18,7 @@ const FilmPage = () => {
     const [isMobile] = useMediaQuery("(max-width: 768px)");
 
     const fetchMoviesSpider = async () => {
-        const response = await axios.get(`http://www.omdbapi.com/?i=${id.id}&apikey=b90ce38c`);
+        const response = await axios.get(`https://www.omdbapi.com/?i=${id.id}&apikey=b90ce38c`);
         setFilm(response.data);
     };
 
