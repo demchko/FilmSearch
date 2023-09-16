@@ -13,7 +13,7 @@ const Header:FC = () => {
     const [isMobile] = useMediaQuery("(max-width: 768px)");
 
     const fetchServer = async() => {
-        const response = await axios.get(`http://www.omdbapi.com/?s=${search}&apikey=b90ce38c`);
+        const response = await axios.get(`https://www.omdbapi.com/?s=${search}&apikey=b90ce38c`);
         setResult(response.data.Search);
     }
 

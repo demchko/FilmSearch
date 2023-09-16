@@ -15,27 +15,27 @@ const FilmsList = () => {
     const nav = useNavigate();
 
     const fetchMoviesSpider = async () => {
-        const response = await axios.get('http://www.omdbapi.com/?s=spider&apikey=b90ce38c');
+        const response = await axios.get('https://www.omdbapi.com/?s=spider&apikey=b90ce38c');
         setFilms((prevFilms) => [...prevFilms, ...response.data.Search.slice(0, 3)]);
     };
 
     const fetchMoviesMatrix = async () => {
-        const response = await axios.get('http://www.omdbapi.com/?s=matrix&apikey=b90ce38c');
+        const response = await axios.get('https://www.omdbapi.com/?s=matrix&apikey=b90ce38c');
         setFilms((prevFilms) => [...prevFilms, ...response.data.Search.slice(0, 3)]);
     };
 
     const fetchMoviesYou = async () => {
-        const response = await axios.get('http://www.omdbapi.com/?s=you&apikey=b90ce38c');
+        const response = await axios.get('https://www.omdbapi.com/?s=you&apikey=b90ce38c');
         setFilms((prevFilms) => [...prevFilms, ...response.data.Search.slice(0, 4)]);
     };
 
     const fetchMoviesDark = async () => {
-        const response = await axios.get('http://www.omdbapi.com/?s=dark&apikey=b90ce38c');
+        const response = await axios.get('https://www.omdbapi.com/?s=dark&apikey=b90ce38c');
         setFilms((prevFilms) => [...prevFilms, ...response.data.Search.slice(0, 5)]);
     };
 
     const fetchMoviesPolice = async () => {
-        const response = await axios.get('http://www.omdbapi.com/?s=police&apikey=b90ce38c');
+        const response = await axios.get('https://www.omdbapi.com/?s=police&apikey=b90ce38c');
         setFilms((prevFilms) => [...prevFilms, ...response.data.Search.slice(0, 5)]);
     };
 
